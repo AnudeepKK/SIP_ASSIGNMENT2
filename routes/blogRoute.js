@@ -15,7 +15,6 @@ router.delete('/deleteblogs/:blogId', authenticateUser, BlogController.deleteBlo
 router.get('/search/:query', authenticateUser, BlogController.searchBlogs);
 
 // Aggregation and advanced querying
-// Have to check - issue
 router.get('/stats', authenticateUser, BlogController.getBlogStatistics);
 router.get('/range/:start/:end', authenticateUser, BlogController.getBlogsInDateRange);
 
